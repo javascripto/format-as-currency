@@ -1,0 +1,32 @@
+{
+  "name": "format-as-currency",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "description": "Utility package to format number as currency",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/javascripto/format-as-currency.git"
+  },
+  "bugs": {
+    "url": "https://github.com/javascripto/format-as-currency/issues"
+  },
+  "author": "Yuri Almeida <yurialves2@gmail.com>",
+  "keywords": [ "format", "currency", "number", "money", "price" ],
+  "homepage": "https://github.com/javascripto/format-as-currency#readme",
+  "scripts": {
+    "build": "tsc",
+    "test": "NODE_ICU_DATA=node_modules/full-icu jest --watch --maxWorkers=50%",
+    "test:ci": "NODE_ICU_DATA=node_modules/full-icu jest --coverage",
+    "prebuild": "rimraf dist",
+    "postinstall": "npm run build"
+  },
+  "devDependencies": {
+    "jest": "^27.0.6",
+    "typescript": "^4.3.5",
+    "@types/jest": "^26.0.24",
+    "ts-jest": "^27.0.3",
+    "full-icu": "^1.3.4",
+    "rimraf": "^3.0.2"
+  }
+}
