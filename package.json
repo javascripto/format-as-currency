@@ -1,6 +1,6 @@
 {
   "name": "@yurialves2/format-as-currency2",
-  "version": "1.0.12",
+  "version": "1.0.16",
   "main": "dist/index.js",
   "license": "MIT",
   "description": "Utility package to format number as currency",
